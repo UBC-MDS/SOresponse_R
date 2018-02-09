@@ -14,6 +14,7 @@ git clone https://github.com/your-username/Stack-Overflow_Text_Analysis_R.git
 
 You can make changes in your local folder.
 
+
 After you finish changes,
 
 ```
@@ -22,7 +23,9 @@ git commit
 
 and 
 
-```git push``` 
+```
+git push
+``` 
 
 the changes to the repo your folked. 
 
