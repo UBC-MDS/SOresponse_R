@@ -2,7 +2,7 @@
 
 We love pull requests from everyone. 
 
-Everyone are welcome to follow the steps below to participat in this project.
+Everyone are welcome to follow the steps below to participate in this project.
 
 
 ## Using Github
