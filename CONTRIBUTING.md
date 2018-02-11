@@ -1,4 +1,4 @@
-## Contributing
+# Contributing
 
 We love pull requests from everyone. 
 
@@ -10,13 +10,13 @@ Everyone are welcome to follow the steps below to participate in this project.
 Fork our repo at : 
 
 
-*[https://github.com/UBC-MDS/Stack-Overflow_Text_Analysis_R](https://github.com/UBC-MDS/Stack-Overflow_Text_Analysis_R)*
+*[https://github.com/UBC-MDS/SOresponse_R](https://github.com/UBC-MDS/SOresponse_R)*
 
 
 Clone the repo:
 
 ```
-git clone https://github.com/your-username/Stack-Overflow_Text_Analysis_R.git
+git clone https://github.com/UBC-MDS/SOresponse_R.git
 ```
 
 You can make changes in your local folder.
@@ -34,7 +34,7 @@ and
 git push
 ``` 
 
-the changes to the repo your folked. 
+the changes to your fork. 
 
 Then, [submit a pull request](https://github.com/UBC-MDS/Stack-Overflow_Text_Analysis_R/compare).
 
