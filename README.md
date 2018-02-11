@@ -1,19 +1,20 @@
-# Stack-Overflow_Text_Analysis_R
+# SOresponse_R
 
+### Contributors
 
-Names of Contributors:
+* Ted Thompson (@TeddTech)
+* Fang Yang (@fyang95)
+* Ying Dong (@yvonnedy)   
+    
+### Overview
 
-* Ted Thompson
-* Fang Yang
-* Ying Dong
+The `SOresponse` package is used for text analysis of Stack Overflow responses. There are both R and Python versions for this package. This package will include 3 functions: `web_page()` `word_count()` `word_mode()`
 
-Analysis of Stack Overflow responses. This package is used for text analysis of Stack Overflow response web pages. Their is both and R and Python version for this package. This package will include 3 functions: `web_page()` `word_count()` `word_mode()`
+* `web_page()`: Loads Stack Overflow response webpage.
 
-`web_page()`: Loads Stack Overflow response webpage.
+* `word_count()`: Counts the total number of words on webpage.
 
-`word_count()`: Counts total number of words on webpage.
+* `word_mode()`: Returns the most common word on webpage.
 
-`word_mode()`: Returns most common word on webpage.
-
-Currenty their is no Python or R software packages that have the same/similar functionality.
+Currently, there are no Python or R software packages that have the same/similar functionality.
 
