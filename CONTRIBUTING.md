@@ -16,7 +16,7 @@ Fork our repo at :
 Clone the repo:
 
 ```
-git clone https://github.com/UBC-MDS/SOresponse_R.git
+git clone https://github.com/your_username/SOresponse_R.git
 ```
 
 You can make changes in your local folder.
