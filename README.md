@@ -8,13 +8,25 @@
     
 ### Overview
 
-The `SOresponse` package is used for text analysis of Stack Overflow responses. There are both R and Python versions for this package. This package will include 3 functions: `web_page()` `word_count()` `word_mode()`
+The `SOresponse` package is used for text analysis of Stack Overflow responses. There are both R and Python versions for this package. This package will include 3 functions: `web_page()` `popular()` `response_stats()`
 
-* `web_page()`: Loads Stack Overflow response webpage.
+* `web_page(url)`: Loads Stack Overflow response webpage.
+	Arguments:
+			`url` - Web adress of Stack Overflow response page. (Must enter exact URL)
+	Value: 
+			returns the question being asked on the given Stack Overflow response webpage. If unsuccessful corisponding error will be returned.
 
-* `word_count()`: Counts the total number of words on webpage.
+* `popular(question)`: Returns most popular response on webpage.
+	Arguments:
+			`question` - An object that used the `web_page()` function.
+	Value:
+			Returns a response. This will be of a character type.
 
-* `word_mode()`: Returns the most common word on webpage.
+* `response_stats(question)`: Returns general statistics about question being asked on stack overflow page.
+	Arguments:
+			`question` - An object that used the `web_page()` function.
+	Value:
+			Returns ....#NEEDSFIXING
 
-Currently, there are no Python or R software packages that have the same/similar functionality.
+Similar packages to SOresponseR are `Py-StackExchange` for python and `overflowr` for R. Py-StackExchange is well managed and has been kept up to date. `overflowr` has been abandon. There links respectively are https://github.com/lucjon/Py-StackExchange and https://meta.stackexchange.com/questions/174972/stackoverflow-api-for-r.
 
