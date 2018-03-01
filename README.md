@@ -11,9 +11,13 @@
 The `SOresponse` package is used for text analysis of Stack Overflow responses. There are both R and Python versions for this package. This package will include 3 functions: `web_page()` `popular()` `response_stats()`
 
 * `web_page(url)`: Loads Stack Overflow response webpage.
+	
 	Arguments:
+			
 			`url` - Web adress of Stack Overflow response page. (Must enter exact URL)
+	
 	Value: 
+			
 			returns the question being asked on the given Stack Overflow response webpage. If unsuccessful corisponding error will be returned.
 
 * `popular(question)`: Returns most popular response on webpage.
