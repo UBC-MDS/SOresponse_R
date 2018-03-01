@@ -10,11 +10,11 @@ web_page <- function(url) {
 
   #library(xml2)
   #library(rvest)
-  response_page <- xml2::read_html(url)
-  question <- response_page %>%
+  response_page <- xml2::read_html(url) # Loads URL
+  question <- response_page %>% # Pulls question
     rvest::html_nodes('#question-header .question-hyperlink') %>%
     rvest::html_text()
 
-  print(question)
-  return(url)
+  print(question) #prints question
+  return(url) # returns url
 }
