@@ -1,15 +1,18 @@
+#' response_stats(url)
+#'
+#' Returns general statistics about question being asked on a Stack Overflow page.
+#'
+#' @param url An object that used the `web_page()` function.
+#'
+#' @return n Returns number of responses.
+#' @return m Average reputation score.
+#' @return t Top reputation score.
+#' @return a Author reputation score.
+#'
+#' @export
+#'
+#' @examples
+#'#'response_stats('https://stackoverflow.com/questions/3505701/grouping-functions-tapply-by-aggregate-and-the-apply-family')
 response_stats <- function(url) {
-  # '''
-  # Returns general statistics about question being asked on a Stack Overflow page.
-  #
-  # Parameters:
-  #     url: An object that used the `web_page()` function.
-  # Returns:
-  #     n: Returns number of responses
-  #     m: Average reputation score
-  #     t: Top reputation score
-  #     a: Author reputation score.
-  # '''
-
 
 }
