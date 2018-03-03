@@ -4,6 +4,7 @@
 #'
 #' @param url An object that used the `web_page()` function.
 #'
+#' @return Returns a vector of length 4 that includes:
 #' @return n Returns number of responses.
 #' @return m Average reputation score.
 #' @return t Top reputation score.

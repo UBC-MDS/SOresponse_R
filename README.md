@@ -40,6 +40,6 @@ The `SOresponse` package is used for text analysis of Stack Overflow responses. 
 
   *Value:*
 
-    Returns number of responses, average reputation score, top reputation score, author reputation score.
+    Returns a vector of length 4 that includes number of responses, average reputation score, top reputation score, author reputation score.
 
 Similar packages to SOresponseR are `Py-StackExchange` for python and `overflowr` for R. Py-StackExchange is well managed and has been kept up to date. `overflowr` has been abandon. There links respectively are https://github.com/lucjon/Py-StackExchange and https://meta.stackexchange.com/questions/174972/stackoverflow-api-for-r.
