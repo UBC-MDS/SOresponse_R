@@ -10,6 +10,8 @@ response_stats(url)
 \item{url}{An object that used the `web_page()` function.}
 }
 \value{
+Returns a vector of length 4 that includes:
+
 n Returns number of responses.
 
 m Average reputation score.
