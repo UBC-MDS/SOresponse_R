@@ -13,7 +13,7 @@
 popular <- function(url, type="likes") {
   if (type=='author') {
     response_page <- xml2::read_html(url) # Loads URL
-    response <- response_page %>% # Pulls question
+    response <- response_page %>% # Pulls author's selected answer
       rvest::html_nodes('.accepted-answer p') %>%
       rvest::html_text()
 
@@ -21,15 +21,15 @@ popular <- function(url, type="likes") {
     return(response) # returns Author's choice of answer
 
 
-  } else{
+  } else if (type=='likes'){
 
 
     response_page <- xml2::read_html(url) # Loads URL
-    likes <- response_page %>% # Pulls question
+    likes <- response_page %>% # Pulls number of likes for each response
       rvest::html_nodes('#answers .vote-count-post') %>%
       rvest::html_text()
 
-    response <- response_page %>% # Pulls question
+    response <- response_page %>% # Pulls each response
       rvest::html_nodes('#answers .post-text') %>%
       rvest::html_text()
 
