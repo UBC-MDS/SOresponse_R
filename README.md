@@ -12,19 +12,19 @@ The `SOresponse` package is used for text analysis of Stack Overflow responses. 
 
 * `web_page(url)`: Loads Stack Overflow response webpage.
 
-	*Arguments:*
+	*Argument:*
 
-  `url` - Web adress of Stack Overflow response page. (Must enter exact URL)
+  `url` - Web address of Stack Overflow response page. (Must enter exact URL)
 
 	*Value:*
 
-  Returns the question being asked on the given Stack Overflow response webpage. If unsuccessful corisponding error will be returned.
+  Returns the question being asked on the given Stack Overflow response webpage. If unsuccessful corresponding error will be returned.
 
-* `popular(question, type = 'likes')`: Returns most popular response on webpage.
-
+* `popular(url, type = 'likes')`: Returns most popular response on webpage.       
+ 
   *Arguments:*
 
-    `question` - An object that used the `web_page()` function.
+    `url` - An object that used the `web_page()` function.
 
     `type` - "likes" returns response with the most likes. "author" returns response confirmed by author of question.
 
@@ -32,14 +32,14 @@ The `SOresponse` package is used for text analysis of Stack Overflow responses. 
 
     Returns a response. This will be of a character type.
 
-* `response_stats(question)`: Returns general statistics about question being asked on stack overflow page.
+* `response_stats(url)`: Returns general statistics about question being asked on Stack Overflow page.
 
-  *Arguments:*
+  *Argument:*
 
-    `question` - An object that used the `web_page()` function.
+    `url` - An object that used the `web_page()` function.
 
   *Value:*
 
-    Returns number of responses, average reputation score, top reputation score
+    Returns a vector of length 4 that includes number of responses, average reputation score, top reputation score, author reputation score.
 
-Similar packages to SOresponseR are `Py-StackExchange` for python and `overflowr` for R. Py-StackExchange is well managed and has been kept up to date. `overflowr` has been abandon. There links respectively are https://github.com/lucjon/Py-StackExchange and https://meta.stackexchange.com/questions/174972/stackoverflow-api-for-r.
+Similar packages to `SOresponse` are `Py-StackExchange` for python and `overflowr` for R. `Py-StackExchange` is well managed and has been kept up to date. `overflowr` has been abandon. There links respectively are https://github.com/lucjon/Py-StackExchange and https://meta.stackexchange.com/questions/174972/stackoverflow-api-for-r.
