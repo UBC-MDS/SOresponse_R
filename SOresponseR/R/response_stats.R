@@ -14,7 +14,10 @@
 #'
 #' @examples
 #'#'response_stats('https://stackoverflow.com/questions/3505701/grouping-functions-tapply-by-aggregate-and-the-apply-family')
-
+library(XML)
+library(xml2)
+library(rvest)
+library(stringr)
 response_stats <- function(url) {
   #load question by using web_page()
   question <- read_html(url)
@@ -24,6 +27,7 @@ response_stats <- function(url) {
     html_nodes('#answers-header h2') %>%
     html_attrs()
   a <- as.double(n_response)
+  if (a==0){print("There is no response!")}
 
   #return the number of average reputation score as "b"
   comment <- question %>%
