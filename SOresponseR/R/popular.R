@@ -26,9 +26,10 @@ popular <- function(url, type="likes") {
     response <- response_page %>% # Pulls author's selected answer
       rvest::html_nodes('.accepted-answer p') %>%
       rvest::html_text()
+    if (length(response) == 0){print("There is no accepted answer!")}else{
 
 
-    return(response) # returns Author's choice of answer
+    return(response)} # returns Author's choice of answer
 
 
   } else if (type=='likes'){
