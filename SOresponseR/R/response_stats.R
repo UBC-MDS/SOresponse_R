@@ -27,7 +27,7 @@ response_stats <- function(url) {
     html_nodes('#answers-header h2') %>%
     html_attrs()
   a <- as.double(n_response)
-  if (a==0){print("There is no response!")}
+  #if (a==0){print("There is no response!")}
 
   #return the number of average reputation score as "b"
   comment <- question %>%
