@@ -17,6 +17,6 @@ web_page <- function(url) {
     rvest::html_text()
 
   print(question) #prints question
-  return(url) # returns url
+  #return(url) # returns url
 
 }
