@@ -43,7 +43,7 @@ test_that("popular is correct if no answer",{
 
 #test the response_stats is correct
 test_that("response_stats is correct",{
-  expect_equal(response_stats(url),c(16,  20404.307692, 230000,  18300))
+  expect_equal(response_stats(url),c(16,  20431.923, 230000,  18400))
 })
 
 
