@@ -13,7 +13,7 @@ Imports:
   stringr,
   rvest,
   xml2
-Suggests: ,
+Suggests:
     testthat,
     knitr,
     rmarkdown
