@@ -14,11 +14,9 @@
 #'
 #' @examples
 #'#'response_stats('https://stackoverflow.com/questions/3505701/grouping-functions-tapply-by-aggregate-and-the-apply-family')
-<<<<<<< HEAD
-library(XML)
-library(XML)
 =======
->>>>>>> f189e68f0e6c8b7d858b7146b26dab9be3602abd
+
+>>>>>>> upstream/master
 library(xml2)
 library(rvest)
 library(stringr)
