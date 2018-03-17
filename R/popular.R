@@ -10,7 +10,7 @@
 #'
 #' @examples
 #'#'popular('https://stackoverflow.com/questions/3505701/grouping-functions-tapply-by-aggregate-and-the-apply-family', type="likes")
-library(XML)
+
 library(xml2)
 library(rvest)
 library(stringr)
