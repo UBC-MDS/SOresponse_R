@@ -1,5 +1,29 @@
 # SOresponse_R
 
+### Installation
+
+Install this package directly from GitHub:
+```
+devtools::install_github("UBC-MDS/SOresponse_R/SOresponseR")
+```
+
+### Usage
+Simple example demonstrating the functionality of this package:
+
+```
+# load package
+library(SOresponseR)
+
+# load Stack Overflow response page
+question <- web_page('https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python?rq=1')
+
+# Returns authors selected answer
+popular(question, type='author')
+
+# Returns general statitics about response page
+response_stats(question)
+```
+
 ### Contributors
 
 * Ted Thompson (@TeddTech)
