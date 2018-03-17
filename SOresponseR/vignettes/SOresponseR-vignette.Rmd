@@ -8,69 +8,66 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+ ### Installation
 
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
+Install this package directly from GitHub:
+```
+devtools::install_github("UBC-MDS/SOresponse_R/SOresponseR")
 ```
 
+### Usage
+Simple example demonstrating the functionality of this package:
 
 ```
+# load package
+library(SOresponseR)
 
+# load Stack Overflow response page
 question <- web_page('https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python?rq=1')
+
+# Returns authors selected answer
 popular(question, type='author')
+
+# Returns general statitics about response page
 response_stats(question)
-
 ```
 
 
 
-Vignettes are long form documentation commonly included in packages. Because they are part of the distribution of the package, they need to be as compact as possible. The `html_vignette` output type provides a custom style sheet (and tweaks some options) to ensure that the resulting html is as small as possible. The `html_vignette` format:
+### Overview
 
-- Never uses retina figures
-- Has a smaller default figure size
-- Uses a custom CSS stylesheet instead of the default Twitter Bootstrap style
+The `SOresponse` package is used for text analysis of Stack Overflow responses. There are both R and Python versions for this package. This package will include 3 functions: `web_page()` `popular()` `response_stats()`
 
-## Vignette Info
+* `web_page(url)`: Loads Stack Overflow response webpage.
 
-Note the various macros within the `vignette` section of the metadata block above. These are required in order to instruct R how to build the vignette. Note that you should change the `title` field and the `\VignetteIndexEntry` to match the title of your vignette.
+	*Argument:*
 
-## Styles
+  `url` - Web address of Stack Overflow response page. (Must enter exact URL)
 
-The `html_vignette` template includes a basic CSS theme. To override this theme you can specify your own CSS in the document metadata as follows:
+	*Value:*
 
-    output: 
-      rmarkdown::html_vignette:
-        css: mystyles.css
+  Returns the question being asked on the given Stack Overflow response webpage. If unsuccessful corresponding error will be returned.
 
-## Figures
+* `popular(url, type = 'likes')`: Returns most popular response on webpage.       
 
-The figure sizes have been customised so that you can easily put two images side-by-side. 
+  *Arguments:*
 
-```{r, fig.show='hold'}
-plot(1:10)
-plot(10:1)
-```
+    `url` - An object that used the `web_page()` function.
 
-You can enable figure captions by `fig_caption: yes` in YAML:
+    `type` - "likes" returns response with the most likes. "author" returns response confirmed by author of question.
 
-    output:
-      rmarkdown::html_vignette:
-        fig_caption: yes
+  *Value:*
 
-Then you can use the chunk option `fig.cap = "Your figure caption."` in **knitr**.
+    Returns a response. This will be of a character type.
 
-## More Examples
+* `response_stats(url)`: Returns general statistics about question being asked on Stack Overflow page.
 
-You can write math expressions, e.g. $Y = X\beta + \epsilon$, footnotes^[A footnote here.], and tables, e.g. using `knitr::kable()`.
+  *Argument:*
 
-```{r, echo=FALSE, results='asis'}
-knitr::kable(head(mtcars, 10))
-```
+    `url` - An object that used the `web_page()` function.
 
-Also a quote using `>`:
+  *Value:*
 
-> "He who gives up [code] safety for [code] speed deserves neither."
-([via](https://twitter.com/hadleywickham/status/504368538874703872))
+    Returns a vector of length 4 that includes number of responses, average reputation score, top reputation score, author reputation score.
+
+Similar packages to `SOresponse` are `Py-StackExchange` for python and `overflowr` for R. `Py-StackExchange` is well managed and has been kept up to date. `overflowr` has been abandon. There links respectively are https://github.com/lucjon/Py-StackExchange and https://meta.stackexchange.com/questions/174972/stackoverflow-api-for-r.
