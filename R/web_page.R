@@ -11,7 +11,6 @@
 #' #'web_page('https://stackoverflow.com/questions/3505701/grouping-functions-tapply-by-aggregate-and-the-apply-family')
 
 
-
 web_page <- function(url) {
   require(xml2)
   require(rvest)

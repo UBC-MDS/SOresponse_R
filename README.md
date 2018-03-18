@@ -1,4 +1,6 @@
-# SOresponse_R
+# SOresponse_R     
+     
+[![Build Status](https://travis-ci.org/UBC-MDS/SOresponse_R.svg?branch=master)](https://travis-ci.org/UBC-MDS/SOresponse_R)
 
 ### Installation
 
@@ -45,7 +47,7 @@ The `SOresponse` package is used for text analysis of Stack Overflow responses. 
   Returns the question being asked on the given Stack Overflow response webpage. If unsuccessful corresponding error will be returned.
 
 * `popular(url, type = 'likes')`: Returns most popular response on webpage.       
- 
+
   *Arguments:*
 
     `url` - An object that used the `web_page()` function.
