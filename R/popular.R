@@ -18,7 +18,7 @@ library(tidyverse)
 
 popular <- function(url, type="likes") {
   #load question by using web_page()
-  question <- read_html(url)
+  question <- xml2::read_html(url)
 
   #return the number of response as "a"
   n_response <- question %>%
