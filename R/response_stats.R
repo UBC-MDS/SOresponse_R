@@ -15,12 +15,13 @@
 #' @examples
 #'#'response_stats('https://stackoverflow.com/questions/3505701/grouping-functions-tapply-by-aggregate-and-the-apply-family')
 
-library(xml2)
-library(rvest)
-library(stringr)
-library(tidyverse)
+
 
 response_stats <- function(url) {
+  require(xml2)
+  require(rvest)
+  require(stringr)
+  require(tidyverse)
   #load question by using web_page()
   question <- read_html(url)
 

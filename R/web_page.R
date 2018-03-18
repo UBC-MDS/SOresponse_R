@@ -9,12 +9,13 @@
 #'
 #' @examples
 #' #'web_page('https://stackoverflow.com/questions/3505701/grouping-functions-tapply-by-aggregate-and-the-apply-family')
-library(xml2)
-library(rvest)
-library(stringr)
-library(tidyverse)
+
 
 web_page <- function(url) {
+  require(xml2)
+  require(rvest)
+  require(stringr)
+  require(tidyverse)
 
   response_page <- xml2::read_html(url) # Loads URL
   question <- response_page %>% # Pulls question

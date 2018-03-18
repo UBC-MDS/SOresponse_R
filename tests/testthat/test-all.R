@@ -1,5 +1,5 @@
-library(stringr)
-library(testthat)
+
+
 url <- "https://stackoverflow.com/questions/68645/static-class-variables-in-python?rq=1"
 url1 <- 'https://stackoverflow.com/questions/44601375/what-is-the-unit-of-the-ruler-in-android-studio-layout-editor'
 url2 <- 'https://stackoverflow.com/questions/49342993/from-crystal-report-to-windows-form-applicationro'

@@ -10,12 +10,14 @@
 #'
 #' @examples
 #'#'popular('https://stackoverflow.com/questions/3505701/grouping-functions-tapply-by-aggregate-and-the-apply-family', type="likes")
-library(xml2)
-library(rvest)
-library(stringr)
-library(tidyverse)
+
 
 popular <- function(url, type="likes") {
+  require(xml2)
+  require(rvest)
+  require(stringr)
+  require(tidyverse)
+
   #load question by using web_page()
   question <- xml2::read_html(url)
 
