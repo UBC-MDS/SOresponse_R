@@ -3,7 +3,7 @@ Title: The SOresponse Package Is Used For Text Analysis Of Stack Overflow Respon
 Version: 0.0.0.9000
 Authors@R: person("Ted", "Thompson", email = "twistedword@live.com", role = c("aut", "cre"))
 Description: The `SOresponse` package is used for text analysis of Stack Overflow responses.
-Depends: R (>= 3.4.0)
+Depends: R (>= 3.4.1)
 License: MIT
 Encoding: UTF-8
 LazyData: true

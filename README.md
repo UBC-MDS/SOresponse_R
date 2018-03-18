@@ -1,4 +1,6 @@
-# SOresponse_R
+# SOresponse_R     
+     
+[![Build Status](https://travis-ci.org/UBC-MDS/SOresponse_R.svg?branch=master)](https://travis-ci.org/UBC-MDS/SOresponse_R)
 
 ### Installation
 

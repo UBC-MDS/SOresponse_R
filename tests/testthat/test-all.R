@@ -6,12 +6,12 @@ url2 <- 'https://stackoverflow.com/questions/49342993/from-crystal-report-to-win
 type<- "likes,author"
 
 test_that("There is no accepted answer",{
-  expect_error(popular(url1, 'author'),"There is no accepted answer!") #test if there is an author chosesn response
+  expect_error(popular(url1, 'author'),"There is no accepted answer!") #test if there is an author chosen response
 
 })
 
 test_that("There are no answers",{
-  expect_error(popular(url2),"There is no response!") #checks if ther are responses to the question
+  expect_error(popular(url2),"There is no response!") #checks if there are responses to the question
 
 })
 
