@@ -1,5 +1,5 @@
-library(stringr)
-library(testthat)
+
+
 url <- "https://stackoverflow.com/questions/68645/static-class-variables-in-python?rq=1"
 url1 <- "https://stackoverflow.com/questions/49218133/gulp-js-minifies-uglifies-and-copies-all-the-files-but-still-the-app-in-the-dis"
 url2 <- "https://stackoverflow.com/questions/34296822/gulp-concat-adding-files-in-js-folder-twice-to-all-js?rq=1"
