@@ -1,12 +1,12 @@
 # SOresponse_R     
-     
+    
 [![Build Status](https://travis-ci.org/UBC-MDS/SOresponse_R.svg?branch=master)](https://travis-ci.org/UBC-MDS/SOresponse_R)
 
 ### Installation
 
 Install this package directly from GitHub:
 ```
-devtools::install_github("UBC-MDS/SOresponse_R/SOresponseR")
+devtools::install_github("UBC-MDS/SOresponse_R")
 ```
 
 ### Usage
@@ -14,16 +14,17 @@ Simple example demonstrating the functionality of this package:
 
 ```
 # load package
-library(SOresponseR)
+library(SOresponse_R)
 
 # load Stack Overflow response page
-question <- web_page('https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python?rq=1')
+
+web_page('https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python?rq=1')
 
 # Returns authors selected answer
-popular(question, type='author')
+popular('https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python?rq=1', ‘likes’)
 
-# Returns general statitics about response page
-response_stats(question)
+# Returns general statistics about response page
+response_stats('https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python?rq=1')
 ```
 
 ### Contributors
