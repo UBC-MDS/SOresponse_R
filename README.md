@@ -1,29 +1,30 @@
 # SOresponse_R     
      
-[![Build Status](https://travis-ci.org/UBC-MDS/SOresponse_R.svg?branch=master)](https://travis-ci.org/UBC-MDS/SOresponse_R)
+[![Build Status](https://travis-ci.org/yvonnedy/SOresponse_R.svg?branch=master)](https://travis-ci.org/yvonnedy/SOresponse_R)
 
 ### Installation
 
 Install this package directly from GitHub:
 ```
-devtools::install_github("UBC-MDS/SOresponse_R/SOresponseR")
+devtools::install_github("UBC-MDS/SOresponse_R")
 ```
 
-### Usage
+### Usage.    
+
 Simple example demonstrating the functionality of this package:
 
 ```
 # load package
 library(SOresponseR)
 
-# load Stack Overflow response page
-question <- web_page('https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python?rq=1')
+# load Stack Overflow webpage
+web_page('https://stackoverflow.com/questions/39/reliable-timer-in-a-console-application')
 
-# Returns authors selected answer
-popular(question, type='author')
+# return author's selected answer
+popular('https://stackoverflow.com/questions/39/reliable-timer-in-a-console-application', type='author')
 
-# Returns general statitics about response page
-response_stats(question)
+# return general statitics about response page
+response_stats('https://stackoverflow.com/questions/39/reliable-timer-in-a-console-application')
 ```
 
 ### Contributors
@@ -46,7 +47,7 @@ The `SOresponse` package is used for text analysis of Stack Overflow responses. 
 
   Returns the question being asked on the given Stack Overflow response webpage. If unsuccessful corresponding error will be returned.
 
-* `popular(url, type = 'likes')`: Returns most popular response on webpage.       
+* `popular(url, type)`: Returns most popular response on webpage.       
 
   *Arguments:*
 
