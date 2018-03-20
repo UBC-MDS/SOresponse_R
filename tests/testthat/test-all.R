@@ -43,5 +43,5 @@ test_that("popular is correct as normal case",{#test the response maps the url
 
 #test the response_stats is correct
 test_that("response_stats is correct",{
-  expect_equal(response_stats(url),c(16,  20432.30769, 230000,  18400))
+  expect_equal(response_stats(url),c(16,  20438.23077, 230000,  18400))
 })
